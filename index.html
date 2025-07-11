@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Status Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .status-list {
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #3d3d3d;
+        }
+
+        .status-item:last-child {
+            border-bottom: none;
+        }
+
+        .company-name {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .status-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .operational {
+            background-color: #1a472a;
+            color: #4ade80;
+        }
+
+        .non-operational {
+            background-color: #450a0a;
+            color: #f87171;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Service Status</h1>
+        <div class="status-list">
+            <div class="status-item">
+                <span class="company-name">Google</span>
+                <span class="status-badge operational">Operational</span>
+            </div>
+            <div class="status-item">
+                <span class="company-name">YouTube</span>
+                <span class="status-badge operational">Operational</span>
+            </div>
+            <div class="status-item">
+                <span class="company-name">Facebook</span>
+                <span class="status-badge non-operational">Non-operational</span>
+            </div>
+            <div class="status-item">
+                <span class="company-name">Swiggy</span>
+                <span class="status-badge operational">Operational</span>
+            </div>
+            <div class="status-item">
+                <span class="company-name">Zomato</span>
+                <span class="status-badge operational">Operational</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
